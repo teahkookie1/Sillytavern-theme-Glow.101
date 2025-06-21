@@ -1,0 +1,275 @@
+/* ========================================
+   SILLYTAVERN CUSTOM THEME CSS
+   ======================================== */
+
+/* ========================================
+   FONT IMPORTS
+   ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cherry+Bomb+One&family=Dancing+Script:wght@400..700&family=Manjari:wght@100;400;700&family=Tagesschrift&display=swap');
+
+/* ========================================
+   GLOBAL FONT SETTINGS
+   ======================================== */
+body, htlm, h1, h2, h3, h4, h5, h6,p, 
+button, select, option, input, texarea {font-family: 'Manjari'}
+
+/* ========================================
+   CHARACTER NAME STYLING
+   ======================================== */
+.mes.mes .name_text{
+    display: inline-flex !important;
+    align-items: baseline;
+    text-align: left;
+    font-size: 30px;
+	margin-top:5px;
+    font-family: 'Manjari' , sans-serif;
+	font-style: normal;
+    line-height: 1.2;
+    padding-right: 5px; 
+
+    /* Custom text gradient effect */
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Custom text shadow */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.85), 
+                 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* ========================================
+   BUTTON ICON REPLACEMENTS
+   ======================================== */
+
+/* Send Button */
+#send_but ::before,
+#send_but ::after {display: none;}
+
+#send_but {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTYgNEM5LjM3OSA0IDQgOS4zNzkgNCAxNnM1LjM3OSAxMiAxMiAxMnMxMi01LjM3OSAxMi0xMlMyMi42MjEgNCAxNiA0bTAgMWM2LjA4MiAwIDExIDQuOTE4IDExIDExcy00LjkxOCAxMS0xMSAxMVM1IDIyLjA4MiA1IDE2UzkuOTE4IDUgMTYgNSIvPjwvc3ZnPg==);}
+
+/* Extensions Menu Button */
+#extensionsMenuButton ::before, 
+#extensionsMenuButton ::after {display: none;}
+
+#extensionsMenuButton {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIxMC44MyAxNjIuODNhNCA0IDAgMCAxLTUuNjYgMEwxMjggODUuNjZsLTc3LjE3IDc3LjE3YTQgNCAwIDAgMS01LjY2LTUuNjZsODAtODBhNCA0IDAgMCAxIDUuNjYgMGw4MCA4MGE0IDQgMCAwIDEgMCA1LjY2Ii8+PC9zdmc+);}
+
+/* Options Button */
+#options_button ::before, 
+#options_button ::after {display: none;}
+
+#options_button {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xMiAxMmgxbS0xIDZoMU0xMiA2aDEiLz48L3N2Zz4=);}
+
+#options_button .drawer-icon {width: 20px;
+                            height: 20px;}
+
+/* Left Navigation Drawer Icon */
+#leftNavDrawerIcon::before,
+#leftNavDrawerIcon::after {
+    display: none !important;}
+				
+#leftNavDrawerIcon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0yMCAxMi41YS41LjUgMCAxIDAgMC0xYS41LjUgMCAwIDAgMCAxbS04IDBhLjUuNSAwIDEgMCAwLTFhLjUuNSAwIDAgMCAwIDFtLTggMGEuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMSIvPjwvc3ZnPg==);}
+
+#leftNavDrawerIcon {width: 40px;
+                    height: px}
+
+/* API Status Top */
+#API-status-top ::before, 
+#API-status-top ::after { display: none ;}
+
+#API-status-top {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xMiAxMy4xNTRWMjFtNS0xMi42MTV2Mi43NjlhMiAyIDAgMCAxLTIgMkg5YTIgMiAwIDAgMS0yLTJ2LTIuNzdhMiAyIDAgMCAxIDItMmg2YTIgMiAwIDAgMSAyIDJabS0xLjY2Ny0yVjNNOC42NjcgNi4zODVWMyIvPjwvc3ZnPg==);}
+
+#API-status-top {width: 30px; 
+                 height: }
+
+/* Advanced Formatting Button */
+#advanced-formatting-button .drawer-icon ::before,
+#advanced-formatting-button .drawer-icon :: after {display: none;}
+
+#advanced-formatting-button .drawer-icon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMyAyMC4yOVY1YTIgMiAwIDAgMSAyLTJoMTRhMiAyIDAgMCAxIDIgMnYxMGEyIDIgMCAwIDEtMiAySDcuOTYxYTIgMiAwIDAgMC0xLjU2MS43NWwtMi4zMzEgMi45MTRBLjYuNiAwIDAgMSAzIDIwLjI5WiIvPjwvc3ZnPg==);}
+
+#advanced-formatting-button .drawer-icon {width: 30px;}
+
+/* World Info Drawer */
+#WIDrawerIcon ::before,
+#WIDrawerIcon ::after {display: none;}
+
+#WIDrawerIcon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS41Ij48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik03LjYzMyAzLjA2N0EzLjAwMSAzLjAwMSAwIDEgMSA0LjAxNyA2LjMyTTIyIDEzLjA1YTMuNSAzLjUgMCAxIDAtMyA1LjkxNCIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0ibTE0LjUgOC41MWwuMDEtLjAxMU0xMCAxN2EyIDIgMCAxIDAgMC00YTIgMiAwIDAgMCAwIDQiLz48L2c+PC9zdmc+);}
+
+#WIDrawerIcon {width: 30px;}
+
+/* User Settings Button */
+#user-settings-button .drawer-icon ::before,
+#user-settings-button .drawer-icon ::after {display: none;}
+
+#user-settings-button .drawer-icon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik01IDIwdi0xYTcgNyAwIDAgMSA3LTd2MGE3IDcgMCAwIDEgNyA3djFtLTctOGE0IDQgMCAxIDAgMC04YTQgNCAwIDAgMCAwIDgiLz48L3N2Zz4=);}
+
+#user-settings-button .drawer-icon {width: 30px;}
+
+/* Logo Block */
+#logo_block .drawer-icon ::before,
+#logo_block .drawer-icon ::after {display: none;}
+
+#logo_block .drawer-icon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik01MTIgMTI4YTM4NCAzODQgMCAxIDAgMCA3NjhhMzg0IDM4NCAwIDAgMCAwLTc2OG0wLTY0YTQ0OCA0NDggMCAxIDEgMCA4OTZhNDQ4IDQ0OCAwIDAgMSAwLTg5NiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik02NDAgMjg4cTY0IDAgNjQgNjR0LTY0IDY0dC02NC02NHQ2NC02NE0yMTQuNjU2IDc5MC42NTZsLTQ1LjMxMi00NS4zMTJsMTg1LjY2NC0xODUuNmE5NiA5NiAwIDAgMSAxMjMuNzEyLTEwLjI0bDEzOC4yNCA5OC42ODhhMzIgMzIgMCAwIDAgMzkuODcyLTIuMTc2TDkwNi42ODggNDIyLjRsNDIuNjI0IDQ3Ljc0NEw2OTkuNTIgNjkzLjY5NmE5NiA5NiAwIDAgMS0xMTkuODA4IDYuNTkybC0xMzguMjQtOTguNzUyYTMyIDMyIDAgMCAwLTQxLjE1MiAzLjQ1NmwtMTg1LjY2NCAxODUuNnoiLz48L3N2Zz4=);}
+
+#logo_block .drawer-icon {width: 30px;}
+
+/* Extensions Settings Button */
+#extensions-settings-button .drawer-icon ::before,
+#extensions-settings-button .drawer-icon ::after {display: none;}
+
+#extensions-settings-button .drawer-icon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik01LjUgNmEuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMW0wIDYuNWEuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMW0wIDYuNWEuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMU0xMiA2YS41LjUgMCAxIDAgMC0xYS41LjUgMCAwIDAgMCAxbTAgNi41YS41LjUgMCAxIDAgMC0xYS41LjUgMCAwIDAgMCAxbTAgNi41YS41LjUgMCAxIDAgMC0xYS41LjUgMCAwIDAgMCAxbTYuNS0xM2EuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMW0wIDYuNWEuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMW0wIDYuNWEuNS41IDAgMSAwIDAtMWEuNS41IDAgMCAwIDAgMSIvPjwvc3ZnPg==);}
+
+#extensions-settings-button .drawer-icon {width: 30px;}
+
+/* Persona Management Button */
+#persona-management-button .drawer-icon ::before,
+#persona-management-button .drawer-icon ::after {display: none;}
+
+#persona-management-button .drawer-icon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiPjxwYXRoIGQ9Ik0xMCA5SDhtLTYgM2MwIDUuNTIzIDQuNDc3IDEwIDEwIDEwczEwLTQuNDc3IDEwLTEwUzE3LjUyMyAyIDEyIDJTMiA2LjQ3NyAyIDEyIi8+PHBhdGggZD0iTTE2LjUgMTQuNXMtMS41IDItNC41IDJzLTQuNS0yLTQuNS0yIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE1LjUgOWEuNS41IDAgMSAxIDAtMWEuNS41IDAgMCAxIDAgMSIvPjwvZz48L3N2Zz4=);}
+
+#persona-management-button .drawer-icon {width: 30px;}
+
+/* Right Navigation Holder */
+#rightNavHolder .drawer-icon ::before,
+#rightNavHolder .drawer-icon ::after {display: none;}
+
+#rightNavHolder .drawer-icon {content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTcuNzMgMTIuNDYycS4yMTQgMCAuMzU4LS4xNDR0LjE0My0uMzU2dC0uMTQ0LS4zNTd0LS4zNTYtLjE0M2gtMy4wNzdxLS4yMTMgMC0uMzU3LjE0M3EtLjE0My4xNDMtLjE0My4zNTd0LjE0My4zNTZ0LjM1Ny4xNDR6bTAtMi43N3EuMjE0IDAgLjM1OC0uMTQzdC4xNDMtLjM1N3QtLjE0NC0uMzU2dC0uMzU2LS4xNDRoLTMuMDc3cS0uMjEzIDAtLjM1Ny4xNDNxLS4xNDMuMTQ0LS4xNDMuMzU3dC4xNDMuMzU3dC4zNTcuMTQzem0tOC42NTMgMy42MTZxLS44MjMgMC0xLjM5NC4xMTRxLS41NzIuMTE0LTEuMDI1LjM2OHEtLjM5LjIxLS41ODkuNDU5dC0uMTk4LjUzMnEwIC4yMjMuMTc3LjM3NXQuNDQ0LjE1Mmg1LjE3cS4yNjcgMCAuNDQ0LS4xNjV0LjE3Ny0uMzkzcTAtLjI1Mi0uMTg5LS40ODl0LS41OTgtLjQ3cS0uNDU0LS4yNTUtMS4wMjUtLjM2OXQtMS4zOTQtLjExNG0wLTEuNjE2cS42MzMgMCAxLjA2Ni0uNDMzcS40MzQtLjQzNC40MzQtMS4wNjd0LS40MzQtMS4wNjZ0LTEuMDY2LS40MzR0LTEuMDY2LjQzNHQtLjQzNCAxLjA2NnQuNDM0IDEuMDY3dDEuMDY2LjQzM000LjYxNiAxOXEtLjY5MSAwLTEuMTUzLS40NjJUMyAxNy4zODRWNi42MTZxMC0uNjkxLjQ2My0xLjE1M1Q0LjYxNSA1aDE0Ljc3cS42OSAwIDEuMTUyLjQ2M1QyMSA2LjYxNnYxMC43NjlxMCAuNjktLjQ2MyAxLjE1M1QxOS4zODUgMTl6bTAtMWgxNC43NjlxLjIzIDAgLjQyMy0uMTkydC4xOTItLjQyNFY2LjYxNnEwLS4yMzEtLjE5Mi0uNDI0VDE5LjM4NSA2SDQuNjE1cS0uMjMgMC0uNDIzLjE5MlQ0IDYuNjE2djEwLjc2OXEwIC4yMy4xOTIuNDIzdC40MjMuMTkyTTQgMThWNnoiLz48L3N2Zz4=);}
+
+#rightNavHolder .drawer-icon {width: 39px !important }
+
+#rightNavHolder .drawer-icon {margin-top: -5.5px;
+margin-left: -10px;}
+
+/* Unimportant Yes Icon */
+#unimportantYes .drawer-icon {width: 24px;}
+
+/* ========================================
+   EXPRESSION IMAGE STYLING
+   ======================================== */
+#expression-wrapper #expression-image{
+  max-height: unset !important;
+  max-width: unset !important;
+  object-fit: contain;
+  padding: 1px; /* Added px unit */
+  min-width: 100px;
+  min-height: 100px;
+  width: var(--expression-image-lorebook-width) !important;
+}
+
+#expression-holder{
+  width: unset !important;
+  max-height: 85vh !important;
+  max-width: 100%; /* Added % unit */
+  bottom: 0 !important;
+  resize: none !important;
+}
+
+#expression-holder {
+  left: unset;
+  right: 0;
+}
+
+/* ========================================
+   TOP BAR STYLING
+   ======================================== */
+#sheld {
+margin-left: 6px;}
+
+#top-bar {
+margin-left: 6px;
+}
+
+#top-bar {height: 27px;}
+
+#top-settings-holder {
+margin-left: 6px 
+}
+
+#top-settings-holder {height:31.9px;}
+
+#top-bar  {
+    border-bottom: 2px solid #FFFFFF !important;
+    box-shadow: 
+        0 3px 15px rgba(255, 255, 255, 0.6),
+        0 5px 25px rgba(255, 255, 255, 0.3),
+        0 8px 35px rgba(255, 255, 255, 0.1) !important;}
+								
+#top-bar {border-radius: 24px;}
+
+/* ========================================
+   BACKGROUND SETTINGS
+   ======================================== */
+body,
+html,
+#bg1,
+.bg_menu,
+.background_menu,
+#chat-container {
+    background-position: center right !important;
+    background-repeat: no-repeat !important;
+}
+
+/* ========================================
+   NAVIGATION DRAWER STYLING
+   ======================================== */
+#rightNavHolder .drawer-toggle {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    height: 30px;(--stcs--iconSize);
+    width: 24px;(--stcs--iconSize); */
+
+}
+
+/* ========================================
+   GLOBAL BODY STYLING
+   ======================================== */
+#body {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 5px 5px calc(var(--shadowWidth) *1px) rgb(86 88 95 / 97%);
+}
+
+/* ========================================
+   AVATAR STYLING
+   ======================================== */
+.avatar img,
+.mes_avatar img,
+.character_select_portrait img,
+img.avatar {
+    border: 2px solid white !important;
+    border: 40% !important;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) !important; /* Optional: soft outer glow */
+}
+
+/* ========================================
+   MESSAGE ID DISPLAY
+   ======================================== */
+.mesIDDisplay {margin-block: 4px;}
+
+/* ========================================
+   GLOBAL TEXT SHADOW
+   ======================================== */
+*{text-shadow: 
+	     0 0 3px rgba(255, 255, 255, 0.4),
+		0 0 1px rgba(255, 255, 255, 0.2);}
+
+/* ========================================
+   SEND FORM STYLING
+   ======================================== */
+#send_form {border-radius: 20px;}
+
+#send_form {border: 2px solid ;}
+
+/* ========================================
+   CHAT STYLING
+   ======================================== */
+#chat {
+    background-color: rgba(0, 0, 0, 0.5); /* Grey with 30% opacity */
+}
+
+#chat {border-radius: 20px;}
